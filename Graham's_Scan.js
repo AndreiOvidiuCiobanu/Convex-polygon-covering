@@ -53,9 +53,7 @@ function viraj_dreapta(a, b, c)		// functia de viraj
 } 
 
 
-
-////////////////////////////////  						NU FUNCTIONEAZA..............HELLLLPPPP ....
-										///doresc sa se umple aria poligonului inainte de a introduce pct exterior
+///doresc sa se umple aria poligonului inainte de a introduce pct exterior
 function deseneaza_poligon(){
 	var lin = document.getElementById("myCanvas");
 	var ctx = lin.getContext("2d");
@@ -71,10 +69,6 @@ function deseneaza_poligon(){
 	ctx.fillStyle = "rgb(200,0,0)";
 	ctx.fill();					     	
 }
-
-/////////////////////////
-
-
 
 function frontiera_inferioara()		// detectarea frontierei inferioare a acoperirii convexe
 {
@@ -109,8 +103,8 @@ function frontiera_inferioara()		// detectarea frontierei inferioare a acoperiri
 		}
 	  }
 		
-	  var t;
-      var ok = 0;
+	var t;
+	var ok = 0;
   
 	  // initializam stiva cu primele doua pucte din vectorul de puncte 
 	  // cele mai mici 2 pct 
